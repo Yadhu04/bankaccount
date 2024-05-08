@@ -1,12 +1,13 @@
 import 'dart:math';
 
 class Bankaccount {
-  Bankaccount({required this.accountHolder, required this.balance})
-      : accountNumber = createAccount();
+  Bankaccount({
+    required this.accountHolder,
+  }) : accountNumber = createAccount();
 
   final int accountNumber;
   final String accountHolder;
-  double balance;
+  double balance = 0;
 
   static int createAccount() {
     final random = Random();
